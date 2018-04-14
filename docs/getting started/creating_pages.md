@@ -20,6 +20,7 @@ We add the file under `storage/templates`.
 `welcome.tpl` shall look like this:
 
 ```html
+<html>
 <head>
     <title>Framy</title>
 </head>
