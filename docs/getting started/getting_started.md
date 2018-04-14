@@ -12,6 +12,7 @@ installation or setup by Framy needed. This still requires an Apache and MySQL s
 ## Requirements
 
 The Framy framework has only a few system requirements.
+
  - PHP >= 7.0.0
  - PDO PHP Extension
  - MySQL
@@ -19,7 +20,7 @@ The Framy framework has only a few system requirements.
 ## Configuration
 ### Public Directory
 
-After installing Framy you should configure your web server's document / web root to be
+After installing Framy you should configure your web server's document `/` web root to be
 the **public** directory. The **index.php** in this directory serves as the front controller for all
 HTTP requests entering your application.
 
@@ -37,6 +38,7 @@ Storage directory writeable otherwise your web server will not run.
 
 You should change the CrypKey in `config/app.php` an random string. Typically, this string
 should be 32 characters long.
+
 **If the application key is not set, your user sessions and other encrypted data will
 not be secure!**
 
