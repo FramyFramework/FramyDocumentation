@@ -39,3 +39,18 @@ You should change the CrypKey in `config/app.php` an random string. Typically, t
 should be 32 characters long.
 **If the application key is not set, your user sessions and other encrypted data will
 not be secure!**
+
+### Database connection
+
+If you want a database connection you will need to configure it in the
+**config/database.php** file. It comes with an example where you just need to copy&paste
+you Information, also Framy can Handle multiple connections, if you want that you can
+simply copy&paste the hole block and just need to change the name to make the 
+connection work.
+
+### Additional configuration
+
+Framy needs almost no other configuration out of the box. You are free to get started
+developing! However, you may wish to review the **config/app.php** file and its
+documentation. It contains several options such as *timezone* and locale that you may wish
+to change according to your application.
