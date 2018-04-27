@@ -1,7 +1,7 @@
 # Views
 ## Usage
 
-With the awesome helper function view you can display your views extreamly simple:
+With the awesome helper function view you can display your views extremely simple:
 
 ```php
 view("welcome");
@@ -9,7 +9,7 @@ view("welcome");
 ```
 
 Shows the `view.tpl` file inside the pre defined template disk. If you want to use sub
-directorys you can do that but you need to type them in like this:
+directory's, you can do that but you need to type them in like this:
 
 ```php
 view("sub/dir/yourview");
@@ -17,7 +17,7 @@ view("sub/dir/yourview");
 
 ## Extra features
 
-You can assing data to Smarty values by simply adding it as an array parameter:
+You can assign data to Smarty values by simply adding it as an array parameter:
 
 ```php
 view("yourTemplate", ["valueName" => "someValuedataThatCouldBeAnythingYouWant"]);
