@@ -18,4 +18,6 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Stopwatch](components/stopwatch.md)
     - [Storage](components/storage.md)
     - [Validation](components/validation.md)
+ - Digging Deeper
+    - [Framy Console](digging_deeper/cli.md)
  - [Release Notes](release_notes.md)
