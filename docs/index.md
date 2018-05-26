@@ -26,4 +26,3 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Standard Library](components/standard_library.md)
     - [Stopwatch](components/stopwatch.md)
     - [Storage](components/storage.md)
-    - [Validation](components/validation.md)

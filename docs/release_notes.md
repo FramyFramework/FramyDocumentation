@@ -1,4 +1,13 @@
 # Version 0
+
+## v0.2.0
+
+- **Fix**: The Storage Comp. had some weird issues
+- **New**: Console Comp. Commands with custom usability can be added now
+- **New**: Resource directory. For Compiled files like .sass etc.
+- **New**: Structure in Storage directory
+- I moved the code to another GitHub repository because that's cleaner
+
 ## v0.1.4
 
 - **Fix**: In some files were an mispronunciation of Framy
