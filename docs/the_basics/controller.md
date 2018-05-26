@@ -1,5 +1,8 @@
 # Controller
-##  Introduction
+
+ - [Introduction](#introduction)
+
+## Introduction
 
 Instead of defining all of your request handling logic as Closures in route files, you may
 wish to organize this behaviour using Controller classes. Controllers can group related

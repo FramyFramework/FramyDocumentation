@@ -1,4 +1,8 @@
 # Views
+
+ - [Usage](#usage)
+ - [Extra features](#extra-features)
+
 ## Usage
 
 With the awesome helper function view you can display your views extremely simple:

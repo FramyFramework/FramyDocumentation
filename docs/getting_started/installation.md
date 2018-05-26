@@ -1,8 +1,14 @@
-# Getting started
+# Installation
 
-This is the official documentation from probably the badest PHP Framework ever. Framy!
-The Ugly little brother from Laravel, Symfony and other good frameworks.
-Have fun or what ever `¯\_(ツ)_/¯`
+ - [Setup](#setup)
+ - [Requirements](#requirements)
+ - [Configuration](#configuration)
+    - [Public Directory](#public-directory)
+    - [Configuration files](#configuration-files)
+    - [Directory permissions](#directory-permissions)
+    - [CrypKey](#crypkey)
+    - [Database connection](#database-connection)
+    - [Additional configuration](#additional-configuration)
 
 ## Setup
 

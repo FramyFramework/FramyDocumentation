@@ -1,4 +1,14 @@
 # Directory Structure
+
+ - [Introduction](#introduction)
+ - [The Root Directory](#the-root-directory)
+ - [The app Directory](#the-app-directory)
+    - [The config Directory](#the-config-directory)
+    - [The public Directory](#the-public-directory)
+    - [The routes Directory](#the-routes-directory)
+    - [The storage Directory](#the-storage-directory)
+    - [The App Directory](#the-app-directory)
+
 ## Introduction
 
 The default Framy application structure is intended to provide a great starting point for

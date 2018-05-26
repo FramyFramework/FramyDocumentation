@@ -6,16 +6,24 @@ Have fun or what ever ¯\_(ツ)_/¯
 
 # Table of contents
 
- - [Getting started](getting_started/getting_started.md)
+ - Prologue
+    - [Upgrade Guide]()
+    - [Release Notes](release_notes.md)
+    - [API Documentation](https://github.com/FramyFramework/FramyAPI)
+ - Getting started
+    - [Installation](getting_started/installation.md)
     - [Directory Structure](getting_started/directory_structure.md)
-    - [Controller](getting_started/controller.md)
-    - [Creating Pages](getting_started/creating_pages.md)
-    - [Routing](getting_started/routing.md)
-    - [Views](getting_started/views.md)
+ - The Basics
+    - [Routing](the_basics/routing.md)
+    - [Controller](the_basics/controller.md)
+    - [Creating Pages](the_basics/creating_pages.md)
+    - [Views](the_basics/views.md)
+ - Digging Deeper
+    - [Framy Console]() (coming soon)
+    - [Helpers](digging_deeper/helpers.md)
  - Components
     - [Event Manager](components/event_manager.md)
     - [Standard Library](components/standard_library.md)
     - [Stopwatch](components/stopwatch.md)
     - [Storage](components/storage.md)
     - [Validation](components/validation.md)
- - [Release Notes](release_notes.md)
