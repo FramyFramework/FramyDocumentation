@@ -1,7 +1,13 @@
 # Stopwatch
+
+ - [Introduction](#introduction)
+ - [Usage](#usage)
+ - [Periods](#periods)
+ - [Sections](#sections)
+
 ## Introduction
 
-> The Stopwatch component provides a way to profile code.
+The Stopwatch component provides a way to profile code.
 
 ## Usage
 

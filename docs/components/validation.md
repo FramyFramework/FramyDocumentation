@@ -1,5 +1,10 @@
 # Validation
-## introduction
+
+ - [Introduction](#introduction)
+ - [Usage](#usage)
+ - [General Information](#general-information)
+
+## Introduction
 
 Validation of data means checking that the data provided by the user is in accordance with
 the expected format. For example, if you pass the ID of an item in your online shop as a

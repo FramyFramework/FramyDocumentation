@@ -1,10 +1,18 @@
 # EventManager
+
+ - [Introduction](#introduction)
+ - [Usage](#usage)
+ - [Event Handler](#event-handlers)
+ - [Firing events](#firing-events)
+ - [Firing events using a wildcard](#firing-events-using-a-wildcard)
+ - [Execution priority](#execution-priority)
+ - [Custom event classes](#custom-event-classes)
+ - [Event subscriber](#event-subscriber)
+
 ## Introduction
 
-> EventManager Component allows you to easily manage events throughout your
-> application.
-
--------------------------------------------------
+EventManager Component allows you to easily manage events throughout your
+application.
 
 ## Usage
 
@@ -26,7 +34,7 @@ class YourClass
 You're done! You have just subscribed to an event and the moment 'some.event' is fired,
 your handler will process it.
 
-## Event handlers
+## Event Handlers
 
 Now let's take a look at YourHandler. An event handler can be any class. `EventManager`
 will call `handle(Event $event)` method on your handler object, by default. You can,

@@ -1,8 +1,19 @@
 # Storage
+
+ - [Introduction](#introduction)
+ - [Usage](#usage)
+ - [Configuring a storage service](#configuring-a-storage-service)
+ - [Using your new storage](#using-your-new-storage)
+ - [Working with directories](#working-with-directories)
+ - [Reading a directory (non-recursive mode)](#reading-a-directory-(non-recursive-mode))
+ - [Filtering files (recursive mode)](#filtering-files-(recursive-mode))
+ - [Deleting a directory](#deleting-a-directory)
+ - [Storage events](#storage-events)
+
 ## Introduction
 
-> Storage Component is a storage abstraction layer that simplifies the way you work with
-> files and directories.
+Storage Component is a storage abstraction layer that simplifies the way you work with
+files and directories.
 
 ## Usage
 

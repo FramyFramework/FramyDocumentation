@@ -1,8 +1,17 @@
 # Standard Library
+
+- [Introduction](#introduction)
+- [StdLibTrait & ValidorTrait](#stdlibtrait-&-validortrait)
+- [StdObject](#stdobject)
+- [ArrayObject](#arrayobject)
+- [DateTimeObject](#datetimeobject)
+- [StringObject](#stringobject)
+- [UrlObject](#urlobject)
+
 ## Introduction
 
-> The Standard Library Component contains some useful functions It's more or less an
-> overpowered helper Component
+The Standard Library Component contains some useful functions It's more or less an
+overpowered helper Component
 
 ## StdLibTrait & ValidorTrait
 
