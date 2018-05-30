@@ -1,5 +1,12 @@
 # Version 0
 
+## v0.2.1
+
+ - **Fix**: Issue #2 - `Undefined index: driver` warning should not appear anymore  
+ - **Fix**: Issue #1 - Spelling of an link in the welcome template
+ - **New**: Commands can now be stored in the Component. And are registered via namespace 
+ - **New**: [Database: Migrations](database/migration.md)
+
 ## v0.2.0
 
 - **Fix**: The Storage Comp. had some weird issues
