@@ -19,7 +19,7 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Creating Pages](the_basics/creating_pages.md)
     - [Views](the_basics/views.md)
  - Digging Deeper
-    - [Framy Console]() (coming soon)
+    - [Framy Console](digging_deeper/cli.md) (coming soon)
     - [Helpers](digging_deeper/helpers.md)
  - Database
     - [Migration](database/migration.md)

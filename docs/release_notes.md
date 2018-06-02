@@ -1,5 +1,13 @@
 # Version 0
 
+## v0.2.3
+
+ - **Fix** I am an idiot. (forgot to change versions in config files)
+
+## v0.2.2
+
+ - **Fix**: missing `templates_c` folder
+
 ## v0.2.1
 
  - **Fix**: Issue #2 - `Undefined index: driver` warning should not appear anymore  

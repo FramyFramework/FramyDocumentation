@@ -1,4 +1,15 @@
 # Framy Console
+
+ - [Introduction](#introduction)
+ - [Writing Commands](#writing-commands)
+ - [Creating a Command](#creating-a-command)
+ - [Configuring the Command](#configuring-the-command)
+ - [Generating Commands](#generating-commands)
+ - [Console Output](#console-output)
+ - [Defining Input Expectations](#defining-input-expectations)
+    - [Arguments](#arguments)
+    - [Options](#options)
+
 ## Introduction
 Framy provides an Command-Line-Interface with an small number of default commands which can help you while building your application.
 
@@ -12,19 +23,88 @@ php Framy list
 Every command also includes a "help" screen which displays and describes the command's available arguments and options. To view a help screen, precede the name of the command with `help`:
 
 ```
-php Framy help new-command
+php Framy help make:command
 ```
 
 ## Writing Commands
 
 In addition to the commands provided with Framy, you may also build your own custom commands. Commands are typically stored in the `app/custom/Console` directory.
 
+## Creating a Command
+   
+Commands are defined in classes extending Command. For example, you may want a command to create a user:
+
+```php
+class CreateUserCommand extends Command
+{
+    protected function configure()
+    {
+        // ...
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        // ...
+    }
+}
+```
+
+## Configuring the Command
+   
+First of all, you must configure the name of the command in the configure() method. Then you can optionally define a help message and the input options and arguments:
+   
+```php   
+// ...
+protected function configure()
+{
+   $this
+       // the name of the command
+       ->setName('app:create-user')
+   
+       // the short description shown while running "php bin/console list"
+       ->setDescription('Creates a new user.')
+   
+       // the full command description shown when running the command with
+       // the "--help" option
+       ->setHelp('This command allows you to create a user...')
+   ;
+}
+```
+
 ## Generating Commands
 
-To create a new command, use the `new-command` Framy command. This command will create a new command class in the `app/custom/Console` directory. The generated command will include the default set of properties and methods that are present on all commands:
+To create a new command, use the `make:command` Framy command. This command will create a new command class in the `app/custom/Console` directory. The generated command will include the default set of properties and methods that are present on all commands:
 
 ```
-php Framy new-command CommandName
+php Framy make:command CommandName
+```
+
+## Console Output
+  
+The execute() method has access to the output stream to write messages to the console:
+
+```php
+// ...
+protected function execute(InputInterface $input, OutputInterface $output)
+{
+    // outputs multiple lines to the console (adding "\n" at the end of each line)
+    $output->writeln([
+        'User Creator',
+        '============',
+        '',
+    ]);
+
+    // the value returned by someMethod() can be an iterator (https://secure.php.net/iterator)
+    // that generates and returns the messages with the 'yield' PHP keyword
+    $output->writeln($this->someMethod());
+
+    // outputs a message followed by a "\n"
+    $output->writeln('Whoa!');
+
+    // outputs a message without adding a "\n" at the end of the line
+    $output->write('You are about to ');
+    $output->write('create a user.');
+}
 ```
 
 ## Defining Input Expectations
