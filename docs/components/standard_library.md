@@ -1,7 +1,7 @@
 # Standard Library
 
 - [Introduction](#introduction)
-- [StdLibTrait & ValidorTrait](#stdlibtrait-&-validortrait)
+- [StdLibTrait & ValidatorTrait](#stdlibtrait-&-validatortrait)
 - [StdObject](#stdobject)
 - [ArrayObject](#arrayobject)
 - [DateTimeObject](#datetimeobject)
@@ -13,7 +13,7 @@
 The Standard Library Component contains some useful functions It's more or less an
 overpowered helper Component
 
-## StdLibTrait & ValidorTrait
+## StdLibTrait & ValidatorTrait
 
 Both contain basic functions like `serialize()`, `unserialize()` and basic validators like
 `isEmpty()` and many more the usage of them is quite easy and self explaining so no further
