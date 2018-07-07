@@ -9,7 +9,7 @@ Have fun or what ever ¯\_(ツ)_/¯
  - Prologue
     - [Upgrade Guide]()
     - [Release Notes](release_notes.md)
-    - [API Documentation](https://github.com/FramyFramework/FramyAPI)
+    - [API Documentation](https://framyframework.github.io/FramyAPI/)
  - Getting started
     - [Installation](getting_started/installation.md)
     - [Directory Structure](getting_started/directory_structure.md)
