@@ -130,9 +130,9 @@ InputAruments(
 ```
 
 default modes:
-- `Command::REQUIRED`
-- `Command::OPTIONAL`
-- `Command::IS_ARRAY`
+- `InputAruments::REQUIRED`
+- `InputAruments::OPTIONAL`
+- `InputAruments::IS_ARRAY`
 
 except for the name all parameter are optional.
 
@@ -151,10 +151,10 @@ InputOptions(
 ```
 
 default modes:
-- `Command::VALUE_NONE` 
-- `Command::VALUE_REQUIRED` 
-- `Command::VALUE_OPTIONAL` 
-- `Command::VALUE_IS_ARRAY` 
+- `InputOptions::VALUE_NONE`
+- `InputOptions::VALUE_REQUIRED`
+- `InputOptions::VALUE_OPTIONAL`
+- `InputOptions::VALUE_IS_ARRAY`
 
 ## Color and Style the Output
 
