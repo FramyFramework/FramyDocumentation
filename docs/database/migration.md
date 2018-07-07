@@ -5,7 +5,6 @@
  - [Migration Structure](#)
  - [Running Migrations](#)
  - [Tables](#tables)
- - [](#)
 
 ## Introduction
 
