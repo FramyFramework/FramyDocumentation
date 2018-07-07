@@ -1,9 +1,9 @@
 # Database: Migrations
 
  - [Introduction](#introduction)
- - [Generating Migrations](#)
- - [Migration Structure](#)
- - [Running Migrations](#)
+ - [Generating Migrations](#generating-migrations)
+ - [Migration Structure](#migration-structure)
+ - [Running Migrations](#running-migrations)
  - [Tables](#tables)
 
 ## Introduction
