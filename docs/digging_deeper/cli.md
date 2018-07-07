@@ -9,6 +9,8 @@
  - [Defining Input Expectations](#defining-input-expectations)
     - [Arguments](#arguments)
     - [Options](#options)
+ - [Color and Style the Output](#color-and-style-the-output)
+    - [Using Color Styles](#using-color-styles)
 
 ## Introduction
 Framy provides an Command-Line-Interface with an small number of default commands which can help you while building your application.
@@ -153,3 +155,45 @@ default modes:
 - `Command::VALUE_REQUIRED` 
 - `Command::VALUE_OPTIONAL` 
 - `Command::VALUE_IS_ARRAY` 
+
+## Color and Style the Output
+
+By using colors in the command output, you can distinguish different types of output (e.g. important messages, titles, comments, etc.).
+
+### Using Color Styles
+
+Whenever you output text, you can surround the text with tags to color its output. For example:
+
+> By default, the Windows command console doesn't support output coloring.
+
+```php
+// green text
+$output->writeln('<info>foo</info>');
+
+// yellow text
+$output->writeln('<comment>foo</comment>');
+
+// black text on a cyan background
+$output->writeln('<question>foo</question>');
+
+// white text on a red background
+$output->writeln('<error>foo</error>');
+```
+
+The closing tag can be replaced by </>, which revokes all formatting options established by the last opened tag.
+
+You can also set these colors and options directly inside the tag name:
+
+```php
+// green text
+$output->writeln('<fg=green>foo</>');
+
+// black text on a cyan background
+$output->writeln('<fg=black;bg=cyan>foo</>');
+
+// bold text on a yellow background
+$output->writeln('<bg=yellow;options=bold>foo</>');
+
+// bold text with underscore
+$output->writeln('<options=bold,underscore>foo</>');
+```
