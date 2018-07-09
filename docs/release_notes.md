@@ -1,5 +1,13 @@
 # Version 0
 
+## v0.3
+
+- **New**: Added possibility to use Directory without needing an Disk
+- **New**: Added helper function `handle()` to handle Exceptions
+- **New**: Debug mode
+- **New**: added latest version of css Framework Bootstrap to public dir.
+- **New**: added more types in Blueprint
+
 ## v0.2.3
 
  - **Fix** I am an idiot. (forgot to change versions in config files)
