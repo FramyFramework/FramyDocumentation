@@ -1,3 +1,3 @@
 # Routing
 
-[Klein](https://klein.readthedocs.io/en/latest/) Documentation
+[Klein](https://github.com/klein/klein.php/wiki/API) Documentation
