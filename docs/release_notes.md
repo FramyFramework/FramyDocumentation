@@ -1,5 +1,12 @@
 # Version 0
 
+## v0.3.1
+
+- **Removed**: middleware directory
+- **New**: Implemented new exception system mostly everywhere
+- **Fix**: Issue with wrong namespace in Make Commands templates
+- **Fix**: Fixed issue with View
+
 ## v0.3
 
 - **New**: Added possibility to use Directory without needing an Disk
