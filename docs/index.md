@@ -7,7 +7,7 @@ Have fun or what ever ¯\_(ツ)_/¯
 # Table of contents
 
  - Prologue
-    - [Upgrade Guide]()
+    <!-- - [Upgrade Guide]() -->
     - [Release Notes](release_notes.md)
     - [API Documentation](https://framyframework.github.io/FramyAPI/)
  - Getting started
