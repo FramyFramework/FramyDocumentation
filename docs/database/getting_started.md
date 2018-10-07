@@ -11,7 +11,7 @@
 
 Framy tries to make database interactions easy. To accomplish this I created a self made database interaction system.
 
-You can interact with your database either using raw sql or the syntax provided by the DB component. In theory every database system should be supported.
+You can interact with your database either using raw sql or the syntax provided by the query builder. In theory every database system should be supported. All classes of the component return there results as models. 
 
 ### Configuration
 

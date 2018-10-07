@@ -1,5 +1,10 @@
 # Version 0
 
+## (v0.4)
+
+- **New**: Added new helper function `arr()` to easily create `ArrayObjects`
+- **New**: Completely overworked [Database Component](database/getting_started.md)
+
 ## v0.3.1
 
 - **Removed**: middleware directory
