@@ -23,18 +23,17 @@ When using multiple connections, you may access each connection via the `useConn
 
 ## Using the Database Component
 
-To work with the database we need the `Database\Manager` class and add the connection to the manager:
+To work with the database we need the helper function `DB()`:
 
 ```php
-$DB = new \app\framework\Component\Database\Manager();
-
-$DB->addConnection();
+DB();
 ``` 
+Leave arguments blank for default connection.
 
 ### Running Raw SQL Queries
 
-Once you have configured you database you may run queries using the `Database\Manager`. The DB Manager provides methods for each type of query: select, update, insert and delete.
+Once you have configured you database you may run queries using the helper function `DB()`. The DB Manager provides methods for each type of query: select, update, insert and delete.
 
 ```php
-$DB->getConnection()->select("select * from users");
+DB()->getConnection()->select("select * from users");
 ```
