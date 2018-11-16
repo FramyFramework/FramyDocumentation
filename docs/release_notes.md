@@ -1,5 +1,14 @@
 # Version 0
 
+## v0.3.2 - 2018-11-18 [future]
+
+- **Added**: Better exception handling in `app\framework\Component\App\App`
+- **Added**: Handling in case value is not an array 
+- **Changed**: `$param` argument in `app()` helper function has now empty array as default. What fixed some issues/warnings with that.
+- **Fixed**: unhandled exceptions in `app\framework\Component\App\App`
+- **Fixed**: Value in ArrayObject is null if null is given #11
+
+
 ## v0.3.1
 
 - **Removed**: middleware directory
