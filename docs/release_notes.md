@@ -1,6 +1,6 @@
 # Version 0
 
-## v0.3.2 - 2018-11-18 [future]
+## v0.3.2 - 2018-11-17
 
 - **Added**: Better exception handling in `app\framework\Component\App\App`
 - **Added**: Handling in case value is not an array 
