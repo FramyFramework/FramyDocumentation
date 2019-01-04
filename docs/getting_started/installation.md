@@ -20,6 +20,7 @@ installation or setup by Framy needed. This still requires an Apache and MySQL s
 The Framy framework has only a few system requirements.
 
  - PHP >= 7.0.0
+ - PHP Module "mbstring"
  - PDO PHP Extension
  - MySQL
 
