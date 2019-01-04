@@ -39,7 +39,8 @@ feel free to look through the files and get familiar with the options available 
 ### Directory permissions
 
 After configuring Framy you may need to set up some permissions. Framy needs in the
-Storage directory writeable otherwise your web server will not run.
+Storage directory writable otherwise your web server will not run. And make sure that the 
+`storage/templates/templates_c` directory is writable too.
 
 ### CrypKey
 
