@@ -1,3 +1,7 @@
+# Versioning Scheme
+
+Framy's versioning scheme follows the conventions of [schematic versioning](https://semver.org/)
+
 # Version 0
 
 ## v0.3.2 - 2018-11-17
