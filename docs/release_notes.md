@@ -4,6 +4,13 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.3.3 - 2019-01-05
+
+- **New**: Migrate command tells the user if no migrations exist
+- **New**: Migrate command is now telling the user what it does
+- **Fixed**: Query\Builder query bug see #19 
+- **Fixed**: Some code smells in the helper file (doesn't change anything but makes the code cleaner)
+
 ## v0.3.2 - 2018-11-17
 
 - **Added**: Better exception handling in `app\framework\Component\App\App`
