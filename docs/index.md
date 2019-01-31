@@ -23,7 +23,6 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Helpers](digging_deeper/helpers.md)
  - Database
     - [Getting Started](database/getting_started.md)
-    - [Query Builder](database/query_builder.md)
     - [Migration](database/migration.md)
  - Components
     - [Event Manager](components/event_manager.md)
