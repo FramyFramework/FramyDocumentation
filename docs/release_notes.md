@@ -2,8 +2,12 @@
 
 ## (v0.4)
 
-- **New**: Added new helper function `arr()` to easily create `ArrayObjects`
-- **New**: Completely overworked [Database Component](database/getting_started.md)
+- **New**: arr() helper function
+- **New**: impode() ArrayObject method
+- **New**: map() ArrayObject method
+- **New**: DB class with methods to run queries
+- **New**: Basic outline for new [Database Component](database/getting_started.md)
+- **Deprecated**: I'm working on creating my own Database Component so Medoo will be removed as soon as possible.
 
 ## v0.3.1
 
