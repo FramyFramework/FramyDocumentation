@@ -1,6 +1,6 @@
 # Version 0
 
-## (v0.4)
+## v0.4 - 2019-01-31
 
 - **New**: arr() helper function
 - **New**: impode() ArrayObject method
