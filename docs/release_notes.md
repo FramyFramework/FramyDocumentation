@@ -4,6 +4,15 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.4 - 2019-01-31
+
+- **New**: arr() helper function
+- **New**: impode() ArrayObject method
+- **New**: map() ArrayObject method
+- **New**: DB class with methods to run queries
+- **New**: Basic outline for new [Database Component](database/getting_started.md)
+- **Deprecated**: I'm working on creating my own Database Component so Medoo will be removed as soon as possible.
+
 ## v0.3.3 - 2019-01-05
 
 - **New**: Migrate command tells the user if no migrations exist

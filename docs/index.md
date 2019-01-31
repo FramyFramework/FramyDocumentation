@@ -22,6 +22,7 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Framy Console](digging_deeper/cli.md)
     - [Helpers](digging_deeper/helpers.md)
  - Database
+    - [Getting Started](database/getting_started.md)
     - [Migration](database/migration.md)
  - Components
     - [Event Manager](components/event_manager.md)
