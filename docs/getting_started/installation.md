@@ -47,6 +47,8 @@ Storage directory writable otherwise your web server will not run. And make sure
 You should change the CrypKey in `config/app.php` an random string. Typically, this string
 should be 32 characters long.
 
+You can generate the key via the `php Framy key:generate` command 
+
 **If the application key is not set, your user sessions and other encrypted data will
 not be secure!**
 

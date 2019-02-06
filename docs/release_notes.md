@@ -4,6 +4,14 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.4.1 - 2019-02-06
+
+- **Fixed**: "Value must be an array" Exception on firing "ff.database.query_execution" event see #23 
+- **Fixed**: Migration works now again -> see #25 
+- **New**: Its now possible to only migrate one Migration #26 
+- **New**: New command to generate CrypKey #8 
+- **Added**: session_start() to bootstrap.php file #24 
+
 ## v0.4 - 2019-01-31
 
 - **New**: arr() helper function
