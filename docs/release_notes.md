@@ -4,6 +4,14 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.5 - 2019-02-13
+
+- **Added**: .editorconfig file
+- **Changed**: File indentation
+- **Changed**: shorter syntax on using validation trait
+- **Changed**: Validation will now actually throw Exceptions
+- **New**: [Encryption Component](security/encyption.md)
+
 ## v0.4.1 - 2019-02-06
 
 - **Fixed**: "Value must be an array" Exception on firing "ff.database.query_execution" event see #23 
