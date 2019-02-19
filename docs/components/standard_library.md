@@ -2,11 +2,12 @@
 
 - [Introduction](#introduction)
 - [StdLibTrait & ValidatorTrait](#stdlibtrait-&-validatortrait)
+- [SingeltonTrait](#SingeltonTrait)
 - [StdObject](#stdobject)
-- [ArrayObject](#arrayobject)
-- [DateTimeObject](#datetimeobject)
-- [StringObject](#stringobject)
-- [UrlObject](#urlobject)
+    - [ArrayObject](#arrayobject)
+    - [DateTimeObject](#datetimeobject)
+    - [StringObject](#stringobject)
+    - [UrlObject](#urlobject)
 
 ## Introduction
 
@@ -19,6 +20,29 @@ Both contain basic functions like `serialize()`, `unserialize()` and basic valid
 `isEmpty()` and many more the usage of them is quite easy and self explaining so no further
 explanation needed.
 
+## SingeltonTrait
+
+The Singelton Trait is an easy way to access your classes.
+
+Example on how to make your class accessable via the trait:
+
+```php
+use app\framework\Component\StdLib\SingletonTrait;
+
+class MyClass
+{
+    use SingletonTrait;
+}
+```
+
+If you have done this you can access an instance of your class like this:
+
+```php
+MyClass::getInstance();
+```
+
+**NOTE:** if you use the SingeltonTrait you can't use the `__constructor()` method, override `init()` instead it will be executed once while instantiating the class.
+
 ## StdObject
 
 The standard object library is a set of classes that wraps the process of working with some
@@ -30,7 +54,7 @@ code is fully objective and we have also "improved" and "fixed" some of the PHP 
 functions.
 Most of the internal classes inside Framy are written using standard objects.
 
-## ArrayObject
+### ArrayObject
 
 ```php
 $array = new ArrayObject(['one', 'two', 'three']);
@@ -38,7 +62,7 @@ $array->first(); // StringObject 'one'
 $array->append('four')->prepend('zero'); // ['zero', 'one', 'two', 'three', 'four']
 ```
 
-## DateTimeObject
+### DateTimeObject
 
 ```php
 $dt = new DateTimeObject('3 months ago');
@@ -46,14 +70,14 @@ echo $dt; // 2013-02-12 17:00:36
 $dt->add('10 days')->sub('5 hours'); // 2013-02-22 12:00:36
 ```
 
-## StringObject
+### StringObject
 
 ```php
 $string = new StringObject('Some test string.');
 $string->caseUpper()->trimRight('.')->replace(' test'); // SOME STRING
 ```
 
-## UrlObject
+### UrlObject
 
 ```php
 $url = new UrlObject('http://www.framy.com/');
