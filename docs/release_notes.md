@@ -4,6 +4,14 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.6 - 2019-02-21
+
+- **Fixed**: Issue with firing event
+- **Changed**: Database is now firing event on query execution
+- **Added**: Helper functions: `version()` and `isDebug()`
+- **Added**: Global exception handling by Framy in debug mode 
+- **New**: Hashing Component
+
 ## v0.5 - 2019-02-13
 
 - **Added**: .editorconfig file
