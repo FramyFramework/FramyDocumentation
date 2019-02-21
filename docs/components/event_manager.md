@@ -113,7 +113,7 @@ an example:
 
 ```php
 // Specify a priority of execution for your event listeners
-$this->eventManager()->listen('some.event')->handler(new YourH
+$this->eventManager()->listen('some.event')->handler(new YourHandler);
 ```
 
 ## Custom event classes
