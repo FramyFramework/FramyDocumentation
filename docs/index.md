@@ -19,7 +19,8 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Creating Pages](the_basics/creating_pages.md)
     - [Views](the_basics/views.md)
  - Security
-    - [Encyption](security/encyption.md)
+    - [Encryption](security/encryption.md)
+    - [Hashing](security/hashing.md)
  - Digging Deeper
     - [Framy Console](digging_deeper/cli.md)
     - [Helpers](digging_deeper/helpers.md)

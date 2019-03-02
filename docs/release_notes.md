@@ -18,7 +18,7 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 - **Changed**: File indentation
 - **Changed**: shorter syntax on using validation trait
 - **Changed**: Validation will now actually throw Exceptions
-- **New**: [Encryption Component](security/encyption.md)
+- **New**: [Encryption Component](security/encryption.md)
 
 ## v0.4.1 - 2019-02-06
 
