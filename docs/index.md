@@ -31,3 +31,5 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Standard Library](components/standard_library.md)
     - [Stopwatch](components/stopwatch.md)
     - [Storage](components/storage.md)
+ - Developing
+    - [Deploy Guide](developing/deploy.md)
