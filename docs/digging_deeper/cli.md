@@ -9,6 +9,7 @@
  - [Defining Input Expectations](#defining-input-expectations)
     - [Arguments](#arguments)
     - [Options](#options)
+    - [Example](#example)
  - [Color and Style the Output](#color-and-style-the-output)
     - [Using Color Styles](#using-color-styles)
 
@@ -155,6 +156,20 @@ default modes:
 - `InputOptions::VALUE_REQUIRED`
 - `InputOptions::VALUE_OPTIONAL`
 - `InputOptions::VALUE_IS_ARRAY`
+
+## Example
+
+```php
+protected function configure()
+{
+    $this->setName("example")
+        ->setDefinition(new InputDefinition([
+            new InputArgument("name", InputArgument::REQUIRED, "Description of Argument."),
+            new InputOption("name", null, InputOption::VALUE_NONE, "Description of Option.")
+            // you can add more here
+        ]));
+}
+```
 
 ## Color and Style the Output
 
