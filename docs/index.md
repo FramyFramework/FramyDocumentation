@@ -18,6 +18,7 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Controller](the_basics/controller.md)
     - [Creating Pages](the_basics/creating_pages.md)
     - [Views](the_basics/views.md)
+    - [Validation](the_basics/validation.md)
  - Security
     - [Encryption](security/encryption.md)
     - [Hashing](security/hashing.md)
