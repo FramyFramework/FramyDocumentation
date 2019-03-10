@@ -58,3 +58,61 @@ return DB::table('orders')->where('finalized', 1)->exists();
 
 return DB::table('orders')->where('finalized', 1)->doesntExist();
 ```
+
+## Where Clauses
+
+### Simple Where Clauses
+
+You may use the `where()` method on a query builder instance to add `where` clauses to the query. The most basic call to `where()` requires three arguments. The first argument is the name of the column. The second argument is an operator, which can be any of the database's supported operators. Finally, the third argument is the value to evaluate against the column.
+
+For example, here is a query that verifies the value of the "votes" column is equal to 100:
+
+```php
+$users = DB::table('users')->where('votes', '=', 100)->get();
+```
+
+You may use a variety of other operators when writing a where clause:
+
+```php
+$users = DB::table('users')
+    ->where('votes', '>=', 100)
+    ->get();
+
+$users = DB::table('users')
+    ->where('votes', '<>', 100)
+    ->get();
+
+$users = DB::table('users')
+    ->where('name', 'like', 'T%')
+    ->get();
+```
+
+You may also pass an array of conditions to the where function:
+    
+```php
+$users = DB::table('users')->where([
+    ['status', '=', '1'],
+    ['subscribed', '<>', '1'],
+])->get();
+```
+
+### Or Statements
+You may chain where constraints together as well as add or clauses to the query. The  orWhere method accepts the same arguments as the where method:
+
+```php
+$users = DB::table('users')
+    ->where('votes', '>', 100)
+    ->orWhere('name', 'John')
+    ->get();
+```
+
+### Additional Where Clauses
+
+#### whereBetween
+
+The whereBetween method verifies that a column's value is between two values:
+
+```php
+$users = DB::table('users')
+    ->whereBetween('votes', [1, 100])->get();
+```
