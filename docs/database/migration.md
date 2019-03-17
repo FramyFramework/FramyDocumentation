@@ -16,7 +16,7 @@ Migrations are like version control for your database, allowing your team to eas
 To create a migration, use the `make:migration` Framy Command.
 
 ```
-php Framy make:migration users_table
+php Framy make:migration users_table connection
 ```
 
 The new migration will be placed in your `/app/custom/database/migration` folder.

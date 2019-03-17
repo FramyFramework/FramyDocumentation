@@ -4,13 +4,21 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.6 - 2019-02-21
+
+- **Fixed**: Issue with firing event
+- **Changed**: Database is now firing event on query execution
+- **Added**: Helper functions: `version()` and `isDebug()`
+- **Added**: Global exception handling by Framy in debug mode 
+- **New**: Hashing Component
+
 ## v0.5 - 2019-02-13
 
 - **Added**: .editorconfig file
 - **Changed**: File indentation
 - **Changed**: shorter syntax on using validation trait
 - **Changed**: Validation will now actually throw Exceptions
-- **New**: [Encryption Component](security/encyption.md)
+- **New**: [Encryption Component](security/encryption.md)
 
 ## v0.4.1 - 2019-02-06
 

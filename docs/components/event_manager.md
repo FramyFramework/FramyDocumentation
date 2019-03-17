@@ -26,7 +26,8 @@ class YourClass
 {
     use EventManagerTrait;
 
-    public function index() {
+    public function index()
+    {
         $this->eventManager()->listen('some.event')->handler(new YourHandler());
     }
 }
@@ -43,7 +44,8 @@ however, specify a method you want EventManager to call:
 ```php
 class YourHandler
 {
-    public function customHandle(Event $event) {
+    public function customHandle(Event $event)
+    {
         // Do something with the $event...
     }
 }
@@ -111,7 +113,7 @@ an example:
 
 ```php
 // Specify a priority of execution for your event listeners
-$this->eventManager()->listen('some.event')->handler(new YourH
+$this->eventManager()->listen('some.event')->handler(new YourHandler);
 ```
 
 ## Custom event classes
@@ -127,7 +129,8 @@ class PageEvent extends Event
 {
     private $_page;
     
-    public function __construct(Page $page) {
+    public function __construct(Page $page)
+    {
         // Call constructor of parent Event class
         parent::__construct();
 
@@ -135,7 +138,8 @@ class PageEvent extends Event
         $this->_page = $page;
     }
 
-    public function getPage() {
+    public function getPage()
+    {
         return $this->_page;
     }
 }
@@ -147,7 +151,8 @@ $this->eventManager()->fire('cms.page_saved', $pageEvent);
 // In your handler, you can now access page object using $event->getPage()
 class YourHandler
 {
-    public function customHandle(PageEvent $event) {
+    public function customHandle(PageEvent $event)
+    {
         $pageObject = $event->getPage();
     }
 }
@@ -169,21 +174,24 @@ class PageEventSubscriber implements EventSubscriberInterface
     /**
     * Handle page creation event
     */
-    public function onPageCreated($event) {
+    public function onPageCreated($event)
+    {
         //
     }
     
     /**
      * Handle page update
      */
-     public function onPageUpdated($event) {
+     public function onPageUpdated($event)
+     {
         //
      }
 
      /**
      * Register the listeners for the subscriber.
      */
-     public function subscribe() {
+     public function subscribe()
+     {
         $this->eventManager()->listen('cms.page_created')->handler($this)->method('onPageCreated');
         $this->eventManager()->listen('cms.page_updated')->handler($this)->method('onPageUpdated');
      }
