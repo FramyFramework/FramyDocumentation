@@ -2,6 +2,16 @@
 
 Framy's versioning scheme follows the conventions of [schematic versioning](https://semver.org/)
 
+# Version 1
+
+## v1.0 - 2019-03-xx
+
+- **New**: Auth component
+- **New**: `rand()` method in StringObject
+- **New**: `Http` component now only consisting of an session interaction class 
+- **Changed**: Routing to new syntax
+- **Changed**: Directory structure
+
 # Version 0
 
 ## v0.6 - 2019-02-21
