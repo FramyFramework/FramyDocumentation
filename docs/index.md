@@ -20,6 +20,7 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Views](the_basics/views.md)
     - [Validation](the_basics/validation.md)
  - Security
+    - [Authentication](security/auth.md)
     - [Encryption](security/encryption.md)
     - [Hashing](security/hashing.md)
  - Digging Deeper
