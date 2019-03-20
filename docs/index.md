@@ -26,6 +26,7 @@ Have fun or what ever ¯\_(ツ)_/¯
  - Digging Deeper
     - [Framy Console](digging_deeper/cli.md)
     - [Helpers](digging_deeper/helpers.md)
+    - [Localization](digging_deeper/localization.md)
  - Database
     - [Getting Started](database/getting_started.md)
     - [Migration](database/migration.md)

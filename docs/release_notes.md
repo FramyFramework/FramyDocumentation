@@ -11,6 +11,7 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 - **New**: `Http` component now only consisting of an session interaction class 
 - **Changed**: Routing to new syntax
 - **Changed**: Directory structure
+- **Added**: Smarty function `trans`
 
 # Version 0
 
