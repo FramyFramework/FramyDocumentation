@@ -11,7 +11,9 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 - **New**: `Http` component now only consisting of an session interaction class 
 - **Changed**: Routing to new syntax
 - **Changed**: Directory structure
+- **Changed**: Template cache dir is now at `/storage/framework/cache/templates/`
 - **Added**: Smarty function `trans`
+- **Fixed**: No Undefined index warning spamming anymore
 
 # Version 0
 
