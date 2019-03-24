@@ -2,11 +2,12 @@
 
 Framy's versioning scheme follows the conventions of [schematic versioning](https://semver.org/)
 
-# Version 1
+# Version 0
 
-## v1.0 - 2019-03-xx
+## v0.7 - 2019-03-xx
 
 - **New**: Auth component
+- **New**: Localization component
 - **New**: `rand()` method in StringObject
 - **New**: `Http` component now only consisting of an session interaction class 
 - **Changed**: Routing to new syntax
@@ -14,8 +15,6 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 - **Changed**: Template cache dir is now at `/storage/framework/cache/templates/`
 - **Added**: Smarty function `trans`
 - **Fixed**: No Undefined index warning spamming anymore
-
-# Version 0
 
 ## v0.6 - 2019-02-21
 
