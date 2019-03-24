@@ -20,11 +20,13 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Views](the_basics/views.md)
     - [Validation](the_basics/validation.md)
  - Security
+    - [Authentication](security/auth.md)
     - [Encryption](security/encryption.md)
     - [Hashing](security/hashing.md)
  - Digging Deeper
     - [Framy Console](digging_deeper/cli.md)
     - [Helpers](digging_deeper/helpers.md)
+    - [Localization](digging_deeper/localization.md)
  - Database
     - [Getting Started](database/getting_started.md)
     - [Migration](database/migration.md)
