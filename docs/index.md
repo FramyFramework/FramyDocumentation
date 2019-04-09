@@ -26,6 +26,7 @@ Have fun or what ever ¯\_(ツ)_/¯
  - Database
     - [Getting Started](database/getting_started.md)
     - [Migration](database/migration.md)
+    - [Query Builder](database/query_builder.md)
  - Components
     - [Event Manager](components/event_manager.md)
     - [Standard Library](components/standard_library.md)
