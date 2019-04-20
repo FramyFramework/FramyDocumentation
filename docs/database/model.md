@@ -126,3 +126,12 @@ You may also call the `find` method with an array of primary keys, which will re
 ```php
 $users = User::find([1, 2, 3]);
 ```
+
+### Retrieving Aggregates
+You may also use the `count`, `sum`, `max`, and other aggregate methods provided by the `query builder`. These methods return the appropriate scalar value instead of a full model instance:
+
+```php
+$count = User::where('active', 1)->count();
+
+$max = User::where('active', 1)->max('price');
+```
