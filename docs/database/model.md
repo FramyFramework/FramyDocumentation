@@ -3,6 +3,15 @@
 - [Introduction](#introduction)
 - [Defining Models](#defining-models)
     - [Model Conventions](#model-conventions)
+    - [Table Names](#table-names)
+    - [Default Attribute Values](#default-attribute-values)
+- [Retrieving Models](#retrieving-models)
+    - [Adding Additional Constraints](#adding-additional-constraints)
+- [Retrieving Single Models / Aggregates](#retrieving-single-models--aggregates)
+    - [Retrieving Aggregates](#retrieving-aggregates)
+- [Inserting & Updating Models](#inserting--updating-models)
+    - [Inserts](#inserts)
+    - [Updates](#updates)
 
 
 ## Introduction
@@ -134,4 +143,31 @@ You may also use the `count`, `sum`, `max`, and other aggregate methods provided
 $count = User::where('active', 1)->count();
 
 $max = User::where('active', 1)->max('price');
+```
+
+## Inserting & Updating Models
+
+### Inserts
+To create a new record in the database, create a new model instance, set attributes on the model, then call the `save` method:
+
+```php
+$user = new User;
+
+$user->username = "Jon Doe";
+
+$user->save();
+```
+
+When we call the `save` method, a record will be inserted into the database. The `created_at` and `updated_at` timestamps will automatically be set when the save method is called, so there is no need to set them manually.
+
+### Updates
+
+The `save` method may also be used to update models that already exist in the database. To update a model, you should retrieve it, set any attributes you wish to update, and then call the `save` method. Again, the `updated_at` timestamp will automatically be updated, so there is no need to manually set its value:
+
+```php
+$user = User::find(1);
+
+$user->username = "Jon Doe";
+
+$user->save();
 ```
