@@ -1,6 +1,20 @@
 # Database: Query Builder
 
 - [Introduction](#introduction)
+- [Retrieving Results](#retrieving-results)
+    - [Retrieving All Rows From A Table](#retrieving-all-rows-from-a-table)
+    - [Retrieving A Single Row / Column From A Table](#retrieving-a-single-row--column-from-a-table)
+- [Aggregates](#aggregates)
+    - [Determining If Records Exist](#determining-if-records-exist)
+- [Where Clauses](#where-clauses)
+    - [Simple Where Clauses](#simple-where-clauses)
+    - [Or Statements](#or-statements)
+    - [Additional Where Clauses](#additional-where-clauses)
+- [Ordering, Grouping, Limit, & Offset](#ordering-grouping-limit--offset)
+- [Inserts](#inserts)
+- [Updates](#updates)
+    - [Increment & Decrement](#increment--decrement)
+- [Deletes](#deletes)
 
 ## Introduction
 
