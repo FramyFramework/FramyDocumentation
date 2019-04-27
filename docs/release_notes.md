@@ -4,7 +4,20 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
-## v0.7 - 2019-03-xx
+## v0.8 - 2019-04-27
+
+- **Changed**: Moved Database Commands in own directory and set it up in CLI Kernel
+- **Added**: [Query Builder](database/query_builder.md)
+- **Added**: [Model](database/model.md) Basically completely new and now super powerful
+- **Added**: Str helper function
+- **Added**: `ConnectionNotConfiguredException`
+- **New**: method Connection::getNeededModel()
+- **New**: method Connection::processInsertGetId()
+- **Fixed**: ArrayObject::flatten() was not working properly
+- **Fixed**: Too manny connections error: Connection Factory manages connections now in a way that only one instance of conn can ever exist
+- **Removed**: $table attribute from Connection::select()
+
+## v0.7 - 2019-03-24
 
 - **New**: Auth component
 - **New**: Localization component

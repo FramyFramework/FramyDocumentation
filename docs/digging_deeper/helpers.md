@@ -21,6 +21,7 @@ Framy provides some global "Helper" PHP functions. Most of them are used by the 
 | String |
 |---|
 | [getStringBetween](#getstringbetween) |
+| [str](#str)
 
 | Miscellaneous |   
 |---|
@@ -55,6 +56,10 @@ pathTo($pathInProject);
 This is a handy little function to strip out a string between
 two specified pieces of text. This could be used to parse
 XML text, bbCode, or any other delimited code/text for that matter.
+
+#### str
+
+StringObject
 
 ### Miscellaneous
 #### app
