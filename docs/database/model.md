@@ -12,7 +12,8 @@
 - [Inserting & Updating Models](#inserting--updating-models)
     - [Inserts](#inserts)
     - [Updates](#updates)
-
+- [Deleting Models](#deleting-models)
+    - [Deleting An Existing Model By Key](#deleting-an-existing-model-by-key)
 
 ## Introduction
 
@@ -170,4 +171,24 @@ $user = User::find(1);
 $user->username = "Jon Doe";
 
 $user->save();
+```
+
+## Deleting Models
+
+To delete a model, call the delete method on a model instance:
+
+```php
+$user = User::find(1);
+
+$user->delete();
+```
+
+### Deleting An Existing Model By Key
+
+In the example above, we are retrieving the model from the database before calling the `delete` method. However, if you know the primary key of the model, you may `delete` the model without retrieving it by calling the `destroy` method. In addition to a single primary key as its argument an array of primary keys is also possible:
+
+```php
+User::destroy(1);
+
+User::destroy([2,3]);
 ```
