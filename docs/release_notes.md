@@ -4,6 +4,16 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.8.1 - 2019-05-01
+
+- **Changed**: Cipher key generation command creates now utf-8 encoded string instead of random bytes
+- **Changed**: Adapted some DB interaction to new [Query Builder](database/query_builder.md) in Auth component
+- **New**: Storage: can now create files
+- **Fixed**: Auth: user should get now authenticated after registration
+- **Fixed**: Auth: Model::performUpdate() now returns true if anny sets have been updated and false on failure
+- **Fixed**: Make commands now work again
+- **Fixed**: Abstract Exception formats now messages correctly
+
 ## v0.8 - 2019-04-27
 
 - **Changed**: Moved Database Commands in own directory and set it up in CLI Kernel
