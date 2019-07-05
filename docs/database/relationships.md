@@ -4,14 +4,17 @@
 - [Defining Relationships](#defining-relationships)
     - [One To One](#one-to-one)
         - [Defining The Inverse Of The Relationship](#defining-the-inverse-of-the-relationship)
+    - [One to Many](#one-to-many)
+    - [One to Many (inverse)](#one-to-many-inverse)
 - [Querying Relations](#querying-relations)
 
 ## Introduction
 
 Database tables are often related to one another. For example, a blog post may have many comments, or an order could be related to the user who placed it. Framy supports several types of relationships.
 
- - One To One
- - One To Many
+
+ - [One To One](#one-to-one)
+ - [One to Many](#one-to-many)
  - Many To Many
  
 ## Defining Relationships
@@ -72,7 +75,7 @@ class Phone extends Model
 }
 ```
 
-In the example above, Framy will try to match the `user_id` from the `Phone` model to an `id` on the `User` model. Eloquent determines the default foreign key name by examining the name of the relationship method and suffixing the method name with `_id`. However, if the foreign key on the `Phone` model is not `user_id`, you may pass a custom key name as the second argument to the `belongsTo` method:
+In the example above, Framy will try to match the `user_id` from the `Phone` model to an `id` on the `User` model. Framy determines the default foreign key name by examining the name of the relationship method and suffixing the method name with `_id`. However, if the foreign key on the `Phone` model is not `user_id`, you may pass a custom key name as the second argument to the `belongsTo` method:
 
 ```php
 /**
@@ -118,7 +121,7 @@ class Post extends Model
 }
 ```
 
-Remember, Framy will automatically determine the proper foreign key column on the `Comment` model. By convention, Framy will take the "snake case" name of the owning model and suffix it with `_id`. So, for this example, Eloquent will assume the foreign key on the `Comment` model is `post_id`.
+Remember, Framy will automatically determine the proper foreign key column on the `Comment` model. By convention, Framy will take the "snake case" name of the owning model and suffix it with `_id`. So, for this example, Framy will assume the foreign key on the `Comment` model is `post_id`.
 
 Since all relationships also serve as query builders, you can add further constraints to which comments are retrieved by calling the `comments` method and continuing to chain conditions onto the query:
 
@@ -136,13 +139,13 @@ return $this->hasMany('App\Comment', 'foreign_key', 'local_key');
 
 ### One To Many (Inverse)
 
-Now that we can access all of a post's comments, let's define a relationship to allow a comment to access its parent post. To define the inverse of a hasMany relationship, define a relationship function on the child model which calls the belongsTo method:
+Now that we can access all of a post's comments, let's define a relationship to allow a comment to access its parent post. To define the inverse of a `hasMany` relationship, define a relationship function on the child model which calls the `belongsTo` method:
 
 ```php
 <?php
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use app\framework\Component\Database\Model\Model;
 
 class Comment extends Model
 {
@@ -153,6 +156,30 @@ class Comment extends Model
     {
         return $this->belongsTo('App\Post');
     }
+}
+```
+
+In the example above, Framy will try to match the `post_id` from the `Comment` model to an  `id` on the `Post` model. Framy determines the default foreign key name by examining the name of the relationship method and suffixing the method name with a `_` followed by the name of the primary key column. However, if the foreign key on the `Comment` model is not  `post_id`, you may pass a custom key name as the second argument to the `belongsTo` method:
+
+```php
+/**
+ * Get the post that owns the comment.
+ */
+public function post()
+{
+    return $this->belongsTo(Post::class, 'foreign_key');
+}
+```
+
+If your parent model does not use `id` as its primary key, or you wish to join the child model to a different column, you may pass a third argument to the `belongsTo` method specifying your parent table's custom key:
+
+```php
+/**
+ * Get the post that owns the comment.
+ */
+public function post()
+{
+    return $this->belongsTo(Post::class, 'foreign_key', 'other_key');
 }
 ```
 
