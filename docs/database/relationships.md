@@ -6,6 +6,7 @@
         - [Defining The Inverse Of The Relationship](#defining-the-inverse-of-the-relationship)
     - [One to Many](#one-to-many)
     - [One to Many (inverse)](#one-to-many-inverse)
+    - [Many to Many](#many-to-many)
 - [Querying Relations](#querying-relations)
 
 ## Introduction
@@ -15,7 +16,7 @@ Database tables are often related to one another. For example, a blog post may h
 
  - [One To One](#one-to-one)
  - [One to Many](#one-to-many)
- - Many To Many
+ - [Many to Many](#many-to-many)
  
 ## Defining Relationships
  
@@ -182,6 +183,12 @@ public function post()
     return $this->belongsTo(Post::class, 'foreign_key', 'other_key');
 }
 ```
+
+### Many To Many
+
+Many-to-many relations are slightly more complicated than `hasOne` and `hasMany` relationships. An example of such a relationship is a user with many roles, where the roles are also shared by other users. For example, many users may have the role of "Admin". To define this relationship, three database tables are needed: `users`, `roles`, and `role_user`. The `role_user` table is derived from the alphabetical order of the related model names, and contains the `user_id` and `role_id` columns.
+
+Many-to-many relationships are defined by writing a method that returns the result of the  `belongsToMany` method. For example, let's define the `roles` method on our `User` model:
 
 ## Querying Relations
 
