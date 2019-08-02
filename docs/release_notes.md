@@ -4,6 +4,10 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.9 - 2019-08-xx
+
+- **Added**: Database: Migration: [column modifier](database/migration.md#column-modifiers)
+
 ## v0.8.1 - 2019-05-01
 
 - **Changed**: Cipher key generation command creates now utf-8 encoded string instead of random bytes
