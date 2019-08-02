@@ -19,6 +19,7 @@ Have fun or what ever ¯\_(ツ)_/¯
     - [Creating Pages](the_basics/creating_pages.md)
     - [Views](the_basics/views.md)
     - [Validation](the_basics/validation.md)
+    - [Middleware](the_basics/middleware.md)
  - Security
     - [Authentication](security/auth.md)
     - [Encryption](security/encryption.md)
