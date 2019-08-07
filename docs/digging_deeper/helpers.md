@@ -28,6 +28,7 @@ Framy provides some global "Helper" PHP functions. Most of them are used by the 
 | [app](#app) |
 | [dd](#dd) |
 | [view](#view) |
+| [get_connection_log](#get_connection_log)
 
 ## Method Listing
 ### URLs
@@ -84,4 +85,12 @@ Get the evaluated view contents for the given view.
 
 ```php
 view($templateName, $dataForTemplate);
+```
+
+#### get_connection_log
+
+returns query log from Connection as array
+
+```php
+get_connection_log();
 ```

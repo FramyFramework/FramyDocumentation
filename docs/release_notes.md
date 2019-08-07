@@ -4,6 +4,17 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.9 - 2019-08-07
+
+- **Added**: Database: Migration: [column modifier](database/migration.md#column-modifiers)
+- **Added**: [Middleware](the_basics/middleware.md)
+- **Added**: added Middleware config file with default configurations
+- **Added**: Database: [Relations](database/relationships.md)
+- **Added**: [get_connection_log](digging_deeper/helpers.md#) helper
+- **New**: helper function class_basename
+- **New**: Storage "middleware" configured
+- **Fixed**: Database: Schema: Blueprint created_at & updated_at fields
+
 ## v0.8.1 - 2019-05-01
 
 - **Changed**: Cipher key generation command creates now utf-8 encoded string instead of random bytes
