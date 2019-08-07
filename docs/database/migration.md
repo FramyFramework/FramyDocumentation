@@ -96,3 +96,4 @@ Schema::table('users', function (Blueprint $table) {
 | `->comment('my comment')` | Add a comment to a column (MySQL/PostgreSQL) |
 | `->default($value)` |	Specify a "default" value for the column |
 | `->nullable()` |	Allows (by default) NULL values to be inserted into the column |
+| `->unique()` | Adds UNIQUE key word to field |

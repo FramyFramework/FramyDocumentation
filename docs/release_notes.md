@@ -12,6 +12,7 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 - **Added**: Database: [Relations](database/relationships.md)
 - **New**: helper function class_basename
 - **New**: Storage "middleware" configured
+- **Fixed**: Database: Schema: Blueprint created_at & updated_at fields
 
 ## v0.8.1 - 2019-05-01
 
