@@ -190,6 +190,43 @@ Many-to-many relations are slightly more complicated than `hasOne` and `hasMany`
 
 Many-to-many relationships are defined by writing a method that returns the result of the  `belongsToMany` method. For example, let's define the `roles` method on our `User` model:
 
+```php
+<?php
+
+namespace app\custom\Models;
+
+use app\framework\Component\Database\Model\Model;
+
+class User extends Model
+{
+    /**
+     * The roles that belong to the user.
+     */
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class);
+    }
+}
+```
+
+Like all other relationship types, you may call the roles method to continue chaining query constraints onto the relationship:
+
+```php
+$roles = User::find(1)->roles()->orderBy('name')->get();
+```
+
+override this convention. You may do so by passing a second argument to the `belongsToMany` method:
+
+```php
+return $this->belongsToMany(Role::class, 'role_user');
+```
+
+In addition to customizing the name of the joining table, you may also customize the column names of the keys on the table by passing additional arguments to the `belongsToMany` method. The third argument is the foreign key name of the model on which you are defining the relationship, while the fourth argument is the foreign key name of the model that you are joining to:
+
+```php
+return $this->belongsToMany(Role::class, 'role_user', 'user_id', 'role_id');
+```
+
 ## Querying Relations
 
 Since all of the relationships are defined in methods, you may call these methods to obtain an instance of the relationship without actually executing the relationship queries. In addition all relationships serve as [QueryBuilder](query_builder.md), allowing you to continue to chain constrains onto the relationship query before finally executing the SQL against the database.
