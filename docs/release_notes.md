@@ -10,6 +10,7 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 - **Added**: [Middleware](the_basics/middleware.md)
 - **Added**: added Middleware config file with default configurations
 - **Added**: Database: [Relations](database/relationships.md)
+- **Added**: [get_connection_log](digging_deeper/helpers.md#) helper
 - **New**: helper function class_basename
 - **New**: Storage "middleware" configured
 - **Fixed**: Database: Schema: Blueprint created_at & updated_at fields
