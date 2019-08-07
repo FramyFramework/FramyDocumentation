@@ -4,7 +4,7 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
-## v0.9 - 2019-08-xx
+## v0.9 - 2019-08-07
 
 - **Added**: Database: Migration: [column modifier](database/migration.md#column-modifiers)
 - **Added**: [Middleware](the_basics/middleware.md)
