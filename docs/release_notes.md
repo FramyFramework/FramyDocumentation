@@ -9,9 +9,9 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 - **Added**: Database: Migration: [column modifier](database/migration.md#column-modifiers)
 - **Added**: [Middleware](the_basics/middleware.md)
 - **Added**: added Middleware config file with default configurations
+- **Added**: Database: [Relations](database/relationships.md)
 - **New**: helper function class_basename
 - **New**: Storage "middleware" configured
- 
 
 ## v0.8.1 - 2019-05-01
 
