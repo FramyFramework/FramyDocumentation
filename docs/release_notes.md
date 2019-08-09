@@ -4,6 +4,11 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.9.1 - 2019-08-09
+
+- **Fixed**: Remove param insertion at Grammar::compileUpdate (see issue #50)
+- **Fixed**: Issue with finding changed attributes in Model for Update
+
 ## v0.9 - 2019-08-07
 
 - **Added**: Database: Migration: [column modifier](database/migration.md#column-modifiers)
