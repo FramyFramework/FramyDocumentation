@@ -4,6 +4,10 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.9.2 - 2019-08-10
+
+- **Fixed**: Handling "?" markers in query didn't work with multiple markers
+
 ## v0.9.1 - 2019-08-09
 
 - **Fixed**: Remove param insertion at Grammar::compileUpdate (see issue #50)
