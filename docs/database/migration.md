@@ -68,8 +68,8 @@ Schema::table('users', function (Blueprint $table) {
 | `$table->dateTime('created_at');` | DATETIME equivalent column. |
 | `$table->decimal('amount', 8, 2);` | DECIMAL equivalent column with a precision (total digits) and scale (decimal digits). |
 | `$table->double('amount', 8, 2);` | DOUBLE equivalent column with a precision (total digits) and scale (decimal digits). |
-| `$table->char('name', 100);` | CHAR equivalent column with an optional length.`|
-| `$table->float('amount', 8, 2);`|	FLOAT equivalent column with a precision (total digits) and scale (decimal digits).|
+| `$table->char('name', 100);` | CHAR equivalent column with an optional length. |
+| `$table->float('amount', 8, 2);`|	FLOAT equivalent column with a precision (total digits) and scale (decimal digits). |
 | `$table->increments('id');` |	Auto-incrementing UNSIGNED INTEGER (primary key) equivalent column. |
 | `$table->integer('votes');` |	INTEGER equivalent column.|
 | `$table->mediumInteger('votes');` | MEDIUMINT equivalent column.|
