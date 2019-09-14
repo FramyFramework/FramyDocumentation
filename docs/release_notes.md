@@ -4,6 +4,10 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.10.1 - 2019-09-14
+
+- **Fixed**: Database: Relation: BelongsToMany: Pivot key relation in the query is now enclosed with "`" see issue #59
+
 ## v0.10 - 2019-08-27
 
 - **Changed**: Routing in a way that an exception is shown with more useful trace
