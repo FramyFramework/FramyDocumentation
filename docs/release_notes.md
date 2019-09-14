@@ -4,6 +4,19 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.10.1 - 2019-09-14
+
+- **Fixed**: Database: Relation: BelongsToMany: Pivot key relation in the query is now enclosed with "`" see issue #59
+
+## v0.10 - 2019-08-27
+
+- **Changed**: Routing in a way that an exception is shown with more useful trace
+- **Changed**: Moved method `Model::getDifference` to ArrayObject as `difference()`
+- **Added**: Classloader: Psr4 autoloading standard
+- **Added**: Helper function datetime()
+- **Added**: Methods to Model class: `query()`, `dot()`, `divide()`, `getKeys()`, `getOnlyValues()`, `isAccessible()`
+- **New**: classloader.php configuration file
+
 ## v0.9.2 - 2019-08-10
 
 - **Fixed**: Handling "?" markers in query didn't work with multiple markers
