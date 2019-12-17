@@ -4,6 +4,10 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.11 - 2019-12-15
+
+- **changed**: class DateTimeObject has been adapted to the general exception handling by removing handle call with just throwing the exception()
+
 ## v0.10.1 - 2019-09-14
 
 - **Fixed**: Database: Relation: BelongsToMany: Pivot key relation in the query is now enclosed with "`" see issue #59
