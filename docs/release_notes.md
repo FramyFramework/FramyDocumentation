@@ -4,7 +4,7 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
-## v0.11 - 2019-12-15
+## v0.11 - 2019-12-18
 
 - **Changed**: class DateTimeObject has been adapted to the general exception handling by removing handle call with just throwing the exception()
 - **Changed**: Command "make:migration": connection option is now optional
