@@ -4,6 +4,20 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.11 - 2019-12-18
+
+- **Changed**: class DateTimeObject has been adapted to the general exception handling by removing handle call with just throwing the exception()
+- **Changed**: Command "make:migration": connection option is now optional
+- **Changed**: Model::freshTimestamp() is now using the datetime helper
+- **Changed**: The year in licence File
+- **Added**: Method DateTimeObject::diff()
+- **Added**: abstract methods val(), keyExists(), count(), isNull(), isInstanceOf(), isArray() in ArrayObject\ManipulationTrait to remove warnings
+- **Fixed**: Issue #62 "Updating database entries via Model doesnt work"
+- **Fixed**: Indentation of config files. (not really a problem but annoying to look at)
+- **Fixed**: Issue #64 "ValidationException not found in Validation Comp."
+- **Fixed**: Issue #65 middleware groups now work properly
+- **Deprecated**: Query\Builder::isOperatorValid()
+
 ## v0.10.1 - 2019-09-14
 
 - **Fixed**: Database: Relation: BelongsToMany: Pivot key relation in the query is now enclosed with "`" see issue #59

@@ -4,8 +4,8 @@
 - [Defining Middleware](#defining-middleware)
 - [Registering Middleware](#registering-middleware)
     - [Global Middleware](#global-middleware)
-    - [Assigning Middleware To Routes](#assigning-middleware-to-routes)
     - [Middleware Groups](#middleware-groups)
+- [Assigning Middleware To Routes](#assigning-middleware-to-routes)
 
 ## Introduction
 
@@ -51,6 +51,45 @@ It's best to envision middleware as a series of "layers" HTTP requests must pass
 
 ## Registering Middleware
 
+The registration of the middleware happens via the `middleware.php` configuration file located in `/config`. If you take a look at that file you can already see the three key elements of the middleware system: global, general and group middleware. They all have comments that roughly explain what they are for and how to configure them. 
+
+Generally a middleware class has to be referenced via fully qualified name: e.g.: `\Some\Class\Name::class`
+
 ### Global Middleware
-### Assigning Middleware To Routes
+> These middleware are run during every request to your application.
+
+Yep, that is literally what these do, they will be executed with every request without further steps to do.
+
+Here an example on how to configure it:
+
+```php
+<?php
+return [
+    'global' => [
+        'middleware_name' => \some\class::class,
+        // more middleware's if wanted        
+    ]
+];
+```
+
+*NOTE: Redirects in Global Middleware logic should be handled with care to prevent endless loops a.k.a. To manny redirects errors*
+
+### Middleware
+
+This type of middleware is very similar to the global middleware except that these must be configured in the route. The config is the same except it has the key `middleware` 
+
+```php
+<?php
+return [
+    'middleware' => [
+        'middleware_name' => \some\class::class,
+        // more middleware's if wanted        
+    ]
+];
+```
+
 ### Middleware Groups
+
+
+
+## Assigning Middleware To Routes
