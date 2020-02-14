@@ -4,6 +4,11 @@ Framy's versioning scheme follows the conventions of [schematic versioning](http
 
 # Version 0
 
+## v0.11.1 - 2020-02-14
+
+- **Fixed**: Check if Middleware group exists falsely throws an exception and fails - see #67
+- **Fixed**: Issue with middleware groups being executed as normal middleware
+
 ## v0.11 - 2019-12-18
 
 - **Changed**: class DateTimeObject has been adapted to the general exception handling by removing handle call with just throwing the exception()
